@@ -2,13 +2,13 @@
 // javascript document oriented database with fs persistency.
 const loki = require('lokijs');
 const fsAdapter = new loki.LokiFsAdapter();
-const pkg = require('../../package.json');
 const logger = require('@mirasaki/logger');
 const chalk = require('chalk');
 const { clientConfig } = require('../util');
 
 // Initialize our db + collections
-const db = new loki(`${ pkg.name }.db`, {
+// Keep the legacy filename so rebranding does not reset existing guild settings.
+const db = new loki('mirasaki-music-bot.db', {
   adapter: fsAdapter,
   env: 'NODEJS',
   autosave: true,

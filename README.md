@@ -1,16 +1,14 @@
-<p align="center"><img src="assets/logo.png" alt="Mirasaki Music Bot Logo" height="60" style="border-radius:50px"/></p>
-<h1 align="center">Mirasaki Music Bot</h1>
+<p align="center"><img src="assets/logo.png" alt="666 MUSIC Logo" height="60" style="border-radius:50px"/></p>
+<h1 align="center">666 MUSIC</h1>
 <div align='center'>
 
-![build](https://img.shields.io/github/actions/workflow/status/mirasaki/mirasaki-music-bot/test.yml)
-[![CodeFactor](https://www.codefactor.io/repository/github/mirasaki/mirasaki-music-bot/badge)](https://www.codefactor.io/repository/github/mirasaki/mirasaki-music-bot)
+![build](https://img.shields.io/github/actions/workflow/status/HOOOOOOQ/666MSC/test.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Docker Pulls](https://img.shields.io/docker/pulls/mirasaki/mirasaki-music-bot)
-![version](https://img.shields.io/github/v/release/Mirasaki/mirasaki-music-bot)
+![version](https://img.shields.io/github/package-json/v/HOOOOOOQ/666MSC)
 
 </div>
 <p align="center">
-  A free, open-source JavaScript music bot created with <a href="https://discord.js.org/#/"><code>discord.js</code></a> and <a href="https://discord-player.js.org/"><code>discord-player</code></a>. Complete (45+ commands) with persistent settings, effects, filters, auto-play, DJ-roles, and so much more.
+  666 MUSIC is a free, open-source JavaScript music bot created with <a href="https://discord.js.org/#/"><code>discord.js</code></a> and <a href="https://discord-player.js.org/"><code>discord-player</code></a>. Complete (45+ commands) with persistent settings, effects, filters, auto-play, DJ-roles, and so much more.
 </p>
 
 <p align="center">
@@ -42,6 +40,17 @@
 </div>
 <br />
 <br/>
+
+## 666 MUSIC branding
+
+The display name is **666 MUSIC**; npm, Docker, and PM2 use the technical identifier `666-music`.
+This fork is based on [Mirasaki Music Bot](https://github.com/Mirasaki/mirasaki-music-bot); original author credits and the MIT license are retained. Legacy showcase images may still display the upstream bot.
+
+To rename an existing Discord bot account, use `/set-name name:666 MUSIC` with Developer permission, or change the bot name in the Discord Developer Portal. Renaming the project does not automatically rename the Discord account. Existing installations can update their `config.js` activity to `666 MUSIC | /play`.
+
+**Data compatibility:** the database remains `mirasaki-music-bot.db` (including the Docker Compose volume) so existing guild settings continue to load. Do not rename or delete it during the update. Docker containers and PM2 processes now use `666-music`; stop old `mirasaki-music-bot` instances before starting the renamed service to avoid running two bots against the same database.
+
+For Docker publishing, set `DOCKER_USERNAME` to your own Docker Hub namespace before running `npm run docker:image` or `npm run docker:push`.
 
 ## 📜 Table of Contents
 
@@ -146,20 +155,20 @@ The quickest and easiest way to host/use this bot is by deploying it inside of a
 
 > *A [**docker compose**](https://docs.docker.com/compose/ "View docker compose documentation") file is included for your convenience*
 
-1. Clone this repository: `git clone https://github.com/Mirasaki/mirasaki-music-bot.git`
-2. Navigate inside the new folder: `cd mirasaki-music-bot`
+1. Clone this repository: `git clone https://github.com/HOOOOOOQ/666MSC.git`
+2. Navigate inside the new folder: `cd 666MSC`
 3. Rename `/.env.example` to `.env` and provide your environmental variables
     - Windows users often experience issues with this file, if you're getting errors that the env file can't be found, or `Expected path argument to be of type string` - check out [this timestamped video](https://youtu.be/6rOCUZ8opLM?t=42)
 4. Rename [`/config.example.js`](/config.example.js "View config.example.js file in current repository") to `config.js` (required) and go through your bot configuration (optional)
-5. Build the project: `docker build --tag mirasaki-music-bot .`
-6. Start the bot: `docker run -it --env-file .env --name my-mirasaki-music-bot mirasaki-music-bot`
+5. Build the project: `docker build --tag 666-music .`
+6. Start the bot: `docker run -it --env-file .env --name 666-music 666-music`
 
 ### Run as a plain NodeJS app
 
 You can also clone this repository or download a release, and host the project directly. You will need [Node/NodeJS](https://nodejs.org/en/ "Node official website") (Be sure to check the box that says "Automatically install the necessary tools" when you're running the installation wizard)
 
-1. Head over to [the download page](https://github.com/Mirasaki/mirasaki-music-bot/releases/)
-    - Alternatively, clone this repository by using `git clone https://github.com/Mirasaki/mirasaki-music-bot.git` and skip to step 4 if you have [Git](https://git-scm.com/downloads "Git Download Section") installed
+1. Head over to [the download page](https://github.com/HOOOOOOQ/666MSC/releases/)
+    - Alternatively, clone this repository by using `git clone https://github.com/HOOOOOOQ/666MSC.git` and skip to step 4 if you have [Git](https://git-scm.com/downloads "Git Download Section") installed
 2. Download either the `zip` or `zip.gz` source code
 3. Extract it using [your favorite zip tool](https://www.rarlab.com/download.htm "It's WinRar, duh")
 4. Open a new console/terminal/shell window in the newly created project folder
@@ -238,7 +247,7 @@ All configuration is done in `/config.js`. Multiple Discord servers are supporte
     status: 'online',
     activities: [
       {
-        name: '/play',
+        name: '666 MUSIC | /play',
         // One of Playing, Streaming, Listening, Watching
         type: 'Listening'
       }
@@ -323,4 +332,4 @@ Join our [support server](https://discord.gg/mirasaki) if you need any further a
 > Open source, self-hosted, and MIT licensed, meaning you're in full control.
 
 <br/>  
-<p align="center"><a href="https://github.com/Mirasaki/mirasaki-music-bot#mirasaki-music-bot"><img src="http://randojs.com/images/backToTopButton.png" alt="Back to top" height="29"/></a></p>
+<p align="center"><a href="#666-music"><img src="http://randojs.com/images/backToTopButton.png" alt="Back to top" height="29"/></a></p>

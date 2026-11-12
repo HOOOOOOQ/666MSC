@@ -1,6 +1,7 @@
 const { ChatInputCommand } = require('../../classes/Commands');
 const { stripIndents } = require('common-tags');
 const { version } = require('discord.js');
+const { displayName } = require('../../../package.json');
 const { BYTES_IN_KIB } = require('../../constants');
 const { colorResolver, msToHumanReadableTime } = require('../../util');
 
@@ -102,7 +103,7 @@ module.exports = new ChatInputCommand({
               inline: true
             }
           ],
-          footer: { text: `Made with ❤️ by Mirasaki#0001 ${ emojis.separator } Open to collaborate ${ emojis.separator } me@mirasaki.dev` }
+          footer: { text: `${ displayName } ${ emojis.separator } Based on Mirasaki Music Bot` }
         }
       ]
     });

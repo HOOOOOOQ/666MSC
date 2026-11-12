@@ -65,7 +65,7 @@ const config = {
     status: 'online',
     activities: [
       {
-        name: '/play',
+        name: '666 MUSIC | /play',
         // One of Playing, Streaming, Listening, Watching
         type: 'Listening'
       }
