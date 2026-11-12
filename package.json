@@ -1,6 +1,6 @@
 {
-  "name": "mirasaki-music-bot",
-  "description": "A free, open-source JavaScript music bot created with discord.js and discord-player",
+  "name": "666-music",
+  "description": "666 MUSIC \u2014 a free, open-source Discord music bot built with discord.js and discord-player",
   "version": "1.2.2",
   "main": "src/index.js",
   "scripts": {
@@ -8,24 +8,24 @@
     "dev": "nodemon run node --trace-warnings .",
     "test": "node . mode=test",
     "commit": "cz",
-    "docker:build": "docker build --tag mirasaki-music-bot .",
-    "docker:shell": "docker run -it --rm mirasaki-music-bot sh",
-    "docker:start": "docker run -it -p 3000:3000 --env-file ./.env -d --name mirasaki-music-bot mirasaki-music-bot",
-    "docker:restart": "docker restart mirasaki-music-bot",
-    "docker:stop": "docker stop mirasaki-music-bot",
-    "docker:kill": "docker rm -f mirasaki-music-bot",
-    "docker:purge": "docker rm -fv mirasaki-music-bot",
-    "docker:logs": "docker logs mirasaki-music-bot -f",
-    "docker:image": "docker image tag mirasaki-music-bot mirasaki/mirasaki-music-bot",
-    "docker:push": "docker push mirasaki/mirasaki-music-bot",
+    "docker:build": "docker build --tag 666-music .",
+    "docker:shell": "docker run -it --rm 666-music sh",
+    "docker:start": "docker run -it -p 3000:3000 --env-file ./.env -d --name 666-music 666-music",
+    "docker:restart": "docker restart 666-music",
+    "docker:stop": "docker stop 666-music",
+    "docker:kill": "docker rm -f 666-music",
+    "docker:purge": "docker rm -fv 666-music",
+    "docker:logs": "docker logs 666-music -f",
+    "docker:image": "docker image tag 666-music ${DOCKER_USERNAME:?Set DOCKER_USERNAME}/666-music",
+    "docker:push": "docker push ${DOCKER_USERNAME:?Set DOCKER_USERNAME}/666-music",
     "docker:update": "git pull && npm install && npm run docker:stop && npm run docker:kill && npm run docker:build && npm run docker:start",
-    "docker:dev:build": "docker build --tag mirasaki-music-bot-dev -f ./.devcontainer/.Dockerfile .",
-    "docker:dev:start": "docker run -it --rm -v $(pwd):/app -v /app/node_modules -p 3000:3000 -p 9229:9229 -w /app mirasaki-music-bot-dev",
-    "pm2:start": "pm2 start --name=mirasaki-music-bot npm -- run start",
-    "pm2:stop": "pm2 stop mirasaki-music-bot",
-    "pm2:purge": "pm2 stop mirasaki-music-bot && pm2 delete mirasaki-music-bot && pm2 reset mirasaki-music-bot",
-    "pm2:logs": "pm2 logs --lines 300 mirasaki-music-bot",
-    "pm2:logsError": "pm2 logs --err --lines 300 mirasaki-music-bot"
+    "docker:dev:build": "docker build --tag 666-music-dev -f ./.devcontainer/.Dockerfile .",
+    "docker:dev:start": "docker run -it --rm -v $(pwd):/app -v /app/node_modules -p 3000:3000 -p 9229:9229 -w /app 666-music-dev",
+    "pm2:start": "pm2 start --name=666-music npm -- run start",
+    "pm2:stop": "pm2 stop 666-music",
+    "pm2:purge": "pm2 stop 666-music && pm2 delete 666-music && pm2 reset 666-music",
+    "pm2:logs": "pm2 logs --lines 300 666-music",
+    "pm2:logsError": "pm2 logs --err --lines 300 666-music"
   },
   "dependencies": {
     "@discord-player/extractor": "^7.2.0",
@@ -45,7 +45,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mirasaki/mirasaki-music-bot.git"
+    "url": "git+https://github.com/HOOOOOOQ/666MSC.git"
   },
   "keywords": [
     "nodejs",
@@ -71,14 +71,15 @@
   "author": "Richard Hillebrand (Mirasaki)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Mirasaki/mirasaki-music-bot/issues"
+    "url": "https://github.com/HOOOOOOQ/666MSC/issues"
   },
-  "homepage": "https://github.com/Mirasaki/mirasaki-music-bot#readme",
+  "homepage": "https://github.com/HOOOOOOQ/666MSC#readme",
   "optionalDependencies": {
     "fsevents": "^2.3.3"
   },
   "engineStrict": true,
   "engines": {
     "node": ">=20.0.0 <22.0.0"
-  }
+  },
+  "displayName": "666 MUSIC"
 }

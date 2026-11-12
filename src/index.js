@@ -34,7 +34,7 @@ const { saveDb } = require('./modules/db');
 
 // Clear the console in non-production modes & print vanity
 process.env.NODE_ENV !== 'production' && console.clear();
-const packageIdentifierStr = `${ pkg.name }@${ pkg.version }`;
+const packageIdentifierStr = `${ pkg.displayName }@${ pkg.version }`;
 logger.info(`${ chalk.greenBright.underline(packageIdentifierStr) } by ${ chalk.cyanBright.bold(pkg.author) }`);
 
 // Initializing/declaring our variables
